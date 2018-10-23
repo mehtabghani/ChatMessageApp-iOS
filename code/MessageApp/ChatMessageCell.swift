@@ -24,13 +24,14 @@ class ChatMessageCell: UITableViewCell {
             bubbleBGView.backgroundColor = chatMessage.isInComing ? .white : .green
             lblText?.text = chatMessage.text
             
-            
             if chatMessage.isInComing {
-                bubbleLeadingConstraint.isActive = true
+                bubbleLeadingConstraint?.isActive = true
             }
             else {
-                bubbleLeadingConstraint.isActive = false
+                bubbleLeadingConstraint?.isActive = false
             }
+            
+            layoutIfNeeded()
         }
     }
     
