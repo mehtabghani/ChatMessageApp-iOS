@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatMessageCell" customModule="MessageApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VgB-vL-J0X" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5af-nz-VxG" userLabel="View - Bubble BG">
+                            <rect key="frame" x="15" y="15" width="62" height="53"/>
+                            <subviews>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rck-Gv-NbQ">
+                                    <rect key="frame" x="10" y="10" width="42" height="33"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Rck-Gv-NbQ" secondAttribute="trailing" constant="10" id="4GH-hI-qPC"/>
+                                <constraint firstAttribute="bottom" secondItem="Rck-Gv-NbQ" secondAttribute="bottom" constant="10" id="ESy-ix-TsU"/>
+                                <constraint firstItem="Rck-Gv-NbQ" firstAttribute="top" secondItem="5af-nz-VxG" secondAttribute="top" constant="10" id="MLn-ok-G5o"/>
+                                <constraint firstItem="Rck-Gv-NbQ" firstAttribute="leading" secondItem="5af-nz-VxG" secondAttribute="leading" constant="10" id="wQB-tr-ySD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="5af-nz-VxG" firstAttribute="leading" secondItem="VgB-vL-J0X" secondAttribute="leading" constant="15" id="1D7-tx-uPl"/>
+                        <constraint firstAttribute="bottom" secondItem="5af-nz-VxG" secondAttribute="bottom" constant="5" id="7Qf-12-7J6"/>
+                        <constraint firstItem="Rck-Gv-NbQ" firstAttribute="width" relation="lessThanOrEqual" secondItem="VgB-vL-J0X" secondAttribute="width" multiplier="0.7" id="WRN-DZ-Etr"/>
+                        <constraint firstAttribute="trailing" secondItem="5af-nz-VxG" secondAttribute="trailing" priority="250" constant="15" id="aGK-or-rtz"/>
+                        <constraint firstItem="5af-nz-VxG" firstAttribute="top" secondItem="VgB-vL-J0X" secondAttribute="top" constant="15" id="kfy-ty-LmR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="VgB-vL-J0X" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BFD-LS-Ofs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VgB-vL-J0X" secondAttribute="trailing" id="NjO-dh-yp8"/>
+                <constraint firstAttribute="bottom" secondItem="VgB-vL-J0X" secondAttribute="bottom" id="awJ-fs-Ioy"/>
+                <constraint firstItem="VgB-vL-J0X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bIc-Yw-kYg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bubbleBGView" destination="5af-nz-VxG" id="OMU-c8-rIA"/>
+                <outlet property="bubbleLeadingConstraint" destination="1D7-tx-uPl" id="sBr-Wl-k6S"/>
+                <outlet property="lblText" destination="Rck-Gv-NbQ" id="YqG-ye-gr3"/>
+            </connections>
+            <point key="canvasLocation" x="48.5" y="68.5"/>
+        </view>
+    </objects>
+</document>
