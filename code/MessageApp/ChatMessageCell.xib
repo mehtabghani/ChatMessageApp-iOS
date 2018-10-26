@@ -21,10 +21,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="73"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5af-nz-VxG" userLabel="View - Bubble BG">
-                            <rect key="frame" x="15" y="15" width="62" height="53"/>
+                            <rect key="frame" x="15" y="12" width="62" height="56"/>
                             <subviews>
                                 <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rck-Gv-NbQ">
-                                    <rect key="frame" x="10" y="10" width="42" height="33"/>
+                                    <rect key="frame" x="10" y="10" width="42" height="36"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -46,7 +46,7 @@
                         <constraint firstAttribute="bottom" secondItem="5af-nz-VxG" secondAttribute="bottom" constant="5" id="7Qf-12-7J6"/>
                         <constraint firstItem="Rck-Gv-NbQ" firstAttribute="width" relation="lessThanOrEqual" secondItem="VgB-vL-J0X" secondAttribute="width" multiplier="0.7" id="WRN-DZ-Etr"/>
                         <constraint firstAttribute="trailing" secondItem="5af-nz-VxG" secondAttribute="trailing" priority="250" constant="15" id="aGK-or-rtz"/>
-                        <constraint firstItem="5af-nz-VxG" firstAttribute="top" secondItem="VgB-vL-J0X" secondAttribute="top" constant="15" id="kfy-ty-LmR"/>
+                        <constraint firstItem="5af-nz-VxG" firstAttribute="top" secondItem="VgB-vL-J0X" secondAttribute="top" constant="12" id="kfy-ty-LmR"/>
                     </constraints>
                 </view>
             </subviews>
